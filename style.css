@@ -4,9 +4,9 @@
   --primary-color: #fab790;
   --secondary-color: #ff6b6b;
   --accent-color: #7289da;
-  --text-color: #fa8947;
-  --background-overlay: rgba(0, 0, 0, 0.8);
-  --card-bg: rgba(255, 255, 255, 0.08);
+  --text-color: #c3cffa;
+  --background-overlay: rgba(0, 0, 0, 0.384);
+  --card-bg: #af94788a;
   --hover-bg: rgba(255, 255, 255, 0.12);
 }
 
