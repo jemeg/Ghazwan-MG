@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>برمجة مواقع</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("preview.png"); /* خلفية الصفحة */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #fff;
+      padding: 40px;
+      margin: 0;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.9);
+    }
+
+    h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: linear-gradient(90deg, #ff4081, #7b2ff7);
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+
+    .link-button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: rgba(34, 34, 34, 0.85);
+      color: #00d1ff;
+      text-decoration: none;
+      padding: 12px 16px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 0 12px #c149f8;
+      transition: background 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: rgba(51, 51, 51, 0.95);
+    }
+
+    .link-button img {
+      width: 300px;
+      height: 130px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #de89f8;
+    }
+
+    .link-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .link-text strong {
+      font-size: 16px;
+      color: #d482e4;
+    }
+
+    .link-text span {
+      font-size: 14px;
+      direction: ltr;
+      color: #19b849;
+      word-break: break-word;
+    }
+
+    /* زر الرجوع */
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: #00c9a7;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      z-index: 3000;
+      box-shadow: 0 0 12px #00c9a7;
+      animation: slideInLeftGlow 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideInLeftGlow {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .back-button:hover {
+      background-color: #00b092;
+      box-shadow: 0 0 20px #00ffd5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- زر الرجوع إلى الصفحة الرئيسية -->
+  <a href="index.html" class="back-button">⬅ الرجوع للرئيسية</a>
+
+  <h1>📄روابط مشاريع 📑 برمجة المواقع🫰</h1>
+
+  <a href="https://jemeg.github.io/-/index.html" target="_blank" class="link-button">
+    <img src="site1.png" alt="موقع 1">
+    <div class="link-text">
+      <strong>وزارة الصحة للدخول كمسئول | Username: Ghazwan-MG | Password: Ghazwan123</strong>
+      <span>https://jemeg.github.io/-/index.html</span>
+    </div>
+  </a>
+
+  <a href="https://jemeg.github.io/Mr3abkari-/" target="_blank" class="link-button">
+    <img src="site2.png" alt="موقع 2">
+    <div class="link-text">
+      <strong>✨ موقع ستريمر الملقب بإسم (مستر عبقري) ✨</strong>
+      <span>https://jemeg.github.io/Mr3abkari-/</span>
+    </div>
+  </a>
+
+  <a href="https://jemeg.github.io/giigii/index.html" target="_blank" class="link-button">
+    <img src="site3.png" alt="موقع 3">
+    <div class="link-text">
+      <strong>📉 موقع خاص بالشركات مثل شركات الاتصالات وغيرها 📈</strong>
+      <span>https://jemeg.github.io/giigii/index.html</span>
+    </div>
+  </a>
+
+  <a href="https://jemeg.github.io/Pasta_And__Sweets/" target="_blank" class="link-button">
+    <img src="site4.png" alt="موقع 4">
+    <div class="link-text">
+      <strong>🫰 موقع خاص بالمحلات والمطاعم وربات البيوت 🫰</strong>
+      <span>https://jemeg.github.io/Pasta_And__Sweets/</span>
+    </div>
+  </a>
+
+</body>
+</html>

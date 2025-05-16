@@ -161,11 +161,17 @@ body {
 }
 
 h1 {
-  font-size: 1.8em;
-  margin-bottom: 8px;
-  color: var(--text-color);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  padding: 10px 16px;
+  background: linear-gradient(90deg, #ff4081, #7b2ff7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #000;
 }
+
 
 .bio {
   font-size: 0.9em;
@@ -460,4 +466,63 @@ h1 {
   width: 100%;
   height: auto;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.floating-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #ff4081, 0 0 30px #ff4081;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  animation: slideInLeftGlow 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideInLeftGlow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.floating-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #ff4081, 0 0 30px #ff4081;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  animation: slideInLeftGlow 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes slideInLeftGlow {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
