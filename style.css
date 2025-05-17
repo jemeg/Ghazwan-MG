@@ -74,6 +74,18 @@ body {
   overflow: hidden;
 }
 
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .logo::before {
   content: "";
   position: absolute;
@@ -107,8 +119,20 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(255, 255, 255, 0.1),
-    0 0 15px rgba(250, 183, 144, 0.2);
+    0 0 15px rgb(248, 221, 98);
   animation: float 3s ease-in-out infinite;
+}
+.image-container {
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #ff6b6b;
+  }
+  50% {
+    box-shadow: 0 0 30px #fab790;
+  }
 }
 
 .image-glow {
@@ -524,5 +548,28 @@ h1 {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+.bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 9999;
+  }
+
+  .bottom-nav a {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
   }
 }

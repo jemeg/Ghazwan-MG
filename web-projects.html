@@ -151,3 +151,12 @@
 
 </body>
 </html>
+    <!-- صوت الأزرار  -->
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+    <script>
+      const sound = document.getElementById("clickSound");
+      document.querySelectorAll("a").forEach(btn =>
+        btn.addEventListener("click", () => sound.play())
+      );
+    </script>
+    
