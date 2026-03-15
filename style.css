@@ -258,6 +258,21 @@ h1 {
   box-shadow: 0 0 12px rgba(250, 183, 144, 0.2);
 }
 
+.paypal-link {
+  justify-content: center;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.paypal-link i {
+  font-size: 1.05em;
+  color: #009cde;
+}
+
+.paypal-link:hover i {
+  color: #003087;
+}
+
 .social-links {
   display: flex;
   flex-direction: column;
